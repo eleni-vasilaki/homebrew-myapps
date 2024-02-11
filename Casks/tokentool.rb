@@ -3,7 +3,6 @@ cask "tokentool" do
   sha256 "06f03c658eae6e368b462cfaf6d1bec82b9d2796d9e270b2546e4f7f4f587873"
 
   url "https://github.com/RPTools/TokenTool/releases/download/#{version}/TokenTool-#{version}.pkg", verified: "github.com/RPTools/TokenTool/"
-
   name "TokenTool"
   desc "Tool for creating customised tokens for virtual tabletop applications"
   homepage "https://rptools.net/toolbox/token-tool/"
@@ -11,8 +10,7 @@ cask "tokentool" do
   pkg "TokenTool-2.2.1.pkg"
 
   uninstall pkgutil: "net.rptools.tokentool",
-          delete:  '/Applications/TokenTool.app'
-
+            delete:  "/Applications/TokenTool.app"
 
   caveats <<~EOS
     TokenTool is not recognized by Apple as being from an "identified developer."
@@ -24,4 +22,3 @@ cask "tokentool" do
     information on how to bypass this issue.
   EOS
 end
-
